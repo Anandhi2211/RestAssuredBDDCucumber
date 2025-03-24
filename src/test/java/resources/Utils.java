@@ -42,10 +42,7 @@ public class Utils {
 
     }
      public String getJsonValue(Response response, String key){
-
          JsonPath js = new JsonPath(response.asString());
          return js.getString(key);
-
-//         return null;
      }
 }
