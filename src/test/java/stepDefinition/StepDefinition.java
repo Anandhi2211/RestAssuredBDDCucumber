@@ -75,7 +75,6 @@ public class StepDefinition extends Utils {
     }
     @Given("DeletePlace Payload")
     public void delete_place_payload() throws FileNotFoundException {
-
         System.out.println(place_Id);
         res = given().spec(requestSpecification())
                 .body(testData.deletePayload(place_Id));
